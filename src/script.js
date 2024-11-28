@@ -51,7 +51,7 @@ floorDisplacementTexture.wrapT = THREE.RepeatWrapping
 const wallColorTexture = textureLoader.load('./wall/castle_brick_broken_06_1k/castle_brick_broken_06_diff_1k.webp')
 const wallARMTexture = textureLoader.load('./wall/castle_brick_broken_06_1k/castle_brick_broken_06_arm_1k.webp')
 const wallNormalTexture = textureLoader.load('./wall/castle_brick_broken_06_1k/castle_brick_broken_06_nor_gl_1k.webp')
- 
+
 wallColorTexture.colorSpace = THREE.SRGBColorSpace
 
 // Roof
@@ -233,26 +233,25 @@ const graveMaterial = new THREE.MeshStandardMaterial({
 const graves = new THREE.Group()
 scene.add(graves)
 
-for(let i = 0; i <30; i++)
-    {
-        const angle = Math.random() * Math.PI * 2
-        // Coordinates
-        const radius = 3 + Math.random() * 4
-        const x = Math.sin(angle) * radius
-        const z = Math.cos(angle) * radius
+for (let i = 0; i < 30; i++) {
+    const angle = Math.random() * Math.PI * 2
+    // Coordinates
+    const radius = 3 + Math.random() * 4
+    const x = Math.sin(angle) * radius
+    const z = Math.cos(angle) * radius
 
-        // Mesh
-        const grave = new THREE.Mesh(graveGeometry, graveMaterial)
-        grave.position.x = x
-        grave.position.y = Math.random() * 0.4 // pour remonter la positions des tombes sur le sol
-        grave.position.z = z
-        grave.rotation.x = (Math.random() - 0.5) * 0.4
-        grave.rotation.y = (Math.random() - 0.5) * 0.4
-        grave.rotation.z = (Math.random() - 0.5) * 0.4
+    // Mesh
+    const grave = new THREE.Mesh(graveGeometry, graveMaterial)
+    grave.position.x = x
+    grave.position.y = Math.random() * 0.4 // pour remonter la positions des tombes sur le sol
+    grave.position.z = z
+    grave.rotation.x = (Math.random() - 0.5) * 0.4
+    grave.rotation.y = (Math.random() - 0.5) * 0.4
+    grave.rotation.z = (Math.random() - 0.5) * 0.4
 
-        // Add to graves groups
-        graves.add(grave)
-    }
+    // Add to graves groups
+    graves.add(grave)
+}
 /**
  * Lights
  */
@@ -271,23 +270,22 @@ doorLight.position.set(0, 2.2, 2.5)
 house.add(doorLight)
 /**
  * Ghosts
- */ 
- const ghost1 = new THREE.PointLight('#8800ff', 6)
- const ghost2 = new THREE.PointLight('#ff0088', 6)
- const ghost3 = new THREE.PointLight('#ff0000', 6)
- scene.add(ghost1, ghost2, ghost3)
-  
+ */
+const ghost1 = new THREE.PointLight('#8800ff', 6)
+const ghost2 = new THREE.PointLight('#ff0088', 6)
+const ghost3 = new THREE.PointLight('#ff0000', 6)
+scene.add(ghost1, ghost2, ghost3)
+
 /** 
  * 
  * Sizes
  */
 const sizes = {
-    width: 1000,
-    height: 600
+    width: window.innerWidth,
+    height: window.innerHeight
 }
 
-window.addEventListener('resize', () =>
-{
+window.addEventListener('resize', () => {
     // Update sizes
     sizes.width = window.innerWidth
     sizes.height = window.innerHeight
@@ -347,11 +345,10 @@ floor.receiveShadow = true
 // Pour activer l'ombre de chaque tombe, on vise les enfants du group "graves" 
 // console.log(graves)
 
-for(const grave of graves.children)
-    {
-        grave.castShadow = true
-        grave.receiveShadow = true
-    }
+for (const grave of graves.children) {
+    grave.castShadow = true
+    grave.receiveShadow = true
+}
 
 
 // Mappings
@@ -402,8 +399,7 @@ scene.fog = new THREE.FogExp2('#02343f', 0.1)
  */
 const timer = new Timer()
 
-const tick = () =>
-{
+const tick = () => {
     // Timer
     timer.update()
     const elapsedTime = timer.getElapsed()

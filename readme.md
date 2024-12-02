@@ -1,4 +1,4 @@
-# 🏚️ Maison Hantée en 3D - Projet Interactif
+# 3D Haunted house 🏚️
 
 Bienvenue sur le projet **Maison Hantée en 3D**, une expérience immersive et effrayante qui intègre une maison hantée modélisée en 3D avec des fonctionnalités interactives, des effets dynamiques de lumière et d’ombre, ainsi que des spotlight animés. Ce projet met en avant des compétences en **WebGL**, **Three.js**, **Blender**, et des technologies modernes comme **Vite**.
 
@@ -25,18 +25,17 @@ Le projet **Maison Hantée en 3D** vous transporte dans une ambiance sombre et m
 
 ---
 
-## 🛠️ Technologies Utilisées
+## 🛠️ **Technologies Utilisées**
 
-### Frontend
-- **HTML5**, **CSS3**, **JavaScript** : Structure et gestion des interactions.
-- **Vite** : Build rapide et serveur de développement performant.
-
-### Rendu 3D
-- **WebGL** : Rendu 3D performant directement dans le navigateur.
-- **Three.js** : Gestion des scènes, caméras, lumières, matériaux, et animations.
-
-### Modélisation 3D
-- **Blender** : Modélisation de la maison, texturage, et exportation au format GLTF.
+| Technologie      | Description                                                                                    | Icône                                                                     |
+|------------------|------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| **HTML5**        | Langage de structuration des pages web.                                                        | ![HTML5](https://img.icons8.com/ios-filled/50/000000/html-5.png)          |
+| **CSS3**         | Langage de style pour la mise en forme des pages web.                                          | ![CSS3](https://img.icons8.com/ios-filled/50/000000/css3.png)             |
+| **JavaScript**   | Langage de programmation pour les interactions sur les pages web.                              | ![JavaScript](https://img.icons8.com/ios-filled/50/000000/javascript.png) |
+| **Vite**         | Outil de développement rapide avec un serveur de développement performant.                     | <img src="https://vitejs.dev/logo.svg" width="50" />                      |
+| **WebGL**        | API graphique pour des rendus interactifs 3D dans le navigateur.                               | ![WebGL](https://img.icons8.com/ios-filled/50/000000/webgl.png)           |
+| **Three.js**     | Bibliothèque JavaScript pour la gestion des scènes 3D interactives dans le navigateur.         | ![Three.js](https://threejs.org/favicon.ico)                              |
+| **Blender**      | Logiciel de modélisation 3D pour créer et exporter des objets 3D au format GLTF.               | <img src="https://www.blender.org/favicon.ico" width="50" />              |
 
 ---
 

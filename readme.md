@@ -1,6 +1,6 @@
 # 3D Haunted house 🏚️
 
-Bienvenue sur le projet **Maison Hantée en 3D**, une expérience immersive et effrayante qui intègre une maison hantée modélisée en 3D avec des fonctionnalités interactives, des effets dynamiques de lumière et d’ombre, ainsi que des spotlight animés. Ce projet met en avant des compétences en **WebGL**, **Three.js**, **Blender**, et des technologies modernes comme **Vite**.
+Bienvenue sur le projet **3D Haunted house**, une expérience immersive et effrayante qui intègre une maison hantée modélisée en 3D avec des fonctionnalités interactives, des effets dynamiques de lumière et d’ombre, ainsi que des spotlight animés. Ce projet met en avant des compétences en **WebGL**, **Three.js**, **Blender**, et des technologies modernes comme **Vite**.
 
 ---
 

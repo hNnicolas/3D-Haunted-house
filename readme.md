@@ -49,15 +49,20 @@ Assurez-vous d’avoir installé :
 - Un gestionnaire de paquets comme **npm** (inclus avec Node.js).
 ---
 
-### Étapes d'installation et d'exécution
+## 📚 **Installation du projet**  
 
-Copiez-collez les commandes suivantes dans votre terminal pour configurer et lancer le projet :
+1. **Téléchargez le projet** :
+   
+   Ou clonez ce dépôt sur votre machine locale.
+   ```bash
+   git clone https://github.com/votre-utilisateur/fish-ocean-project.git
+2. **Installez les dépendances** :  
+   Ouvrez un terminal dans le répertoire du projet et exécutez :  
+   ```bash
+   npm install
 
-```bash
-# Télécharger le repository
-
-# Installer les dépendances
-npm install
-
-# Lancer le serveur local
-npm run dev
+3. **Lancez le projet** :
+   Ouvrez un terminal dans le répertoire du projet et exécutez :
+   ```bash
+   npm run dev
+  
